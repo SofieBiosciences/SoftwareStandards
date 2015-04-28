@@ -1,4 +1,4 @@
-#Sofie Biosciences Software Standards Repo
+#Sofie Biosciences Software Standards
 
 ##Software Development Process
 *todo: show dev topics*
