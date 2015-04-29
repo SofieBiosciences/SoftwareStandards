@@ -1,9 +1,9 @@
 #Sofie Biosciences Software Standards
 
 ##Software Development Process
-*todo: show dev topics*
+*todo: show link to dev process topics*
 
 ##Software Version Naming
-*todo: show version naming scheme*
+*todo: show linke version numbering*
 
 
