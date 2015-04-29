@@ -7,7 +7,7 @@ R&D Prototype Software
 
 Purpose
 +++++++
-    - Support hardware validation
+   - Support hardware validation
    - Consider limitations of software platform
    - Support technical risk assessment
    - Determine resource commitment/requirements for start of production development
