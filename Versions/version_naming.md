@@ -14,8 +14,8 @@ Purpose
 Version Numbers
 ---------------
 
-   - Three number system (1.2.3)
-   - First number notes major releases(1.x.x)
+   - **Three number system (1.2.3)**
+   - **First number notes major releases(1.x.x)**
       * Iterations in this number likely indicate significant changes in
         hardware / software that notes incompatibility.
       * Also can indicate significant feature implementation,
@@ -23,12 +23,12 @@ Version Numbers
       * For customers under service contract using old versions,
         bugs will not be fixed in old versions if they are already fixed in the most recent version.
 
-   - Second number notes standard releases
+   - **Second number notes standard releases**
       * These are any releases that are made available to customer sites.
       * Each standard release is made up of many individual revisions that represent a single software change.
       * Each software feature should be versioned as standard release.
 
-   - Third number notes revisions
+   - **Third number notes revisions**
       * One revision notes one change, e.g. it can be one bug fix or an iteration of feature
 
 Source Control

@@ -1,27 +1,27 @@
 Software Development Process
 ============================
-.. image:: ./images/sw_process_arrow.png
+![Image of Software Process](./images/sw_process_arrow.png)
 
 R&D Prototype Software
 ----------------------
 
-Purpose
-+++++++
+###Purpose
+
    - Support hardware validation
    - Consider limitations of software platform
    - Support technical risk assessment
    - Determine resource commitment/requirements for start of production development
    - Start user experience development
 
-Inputs
-******
+####Inputs
+
    - Product requirements / functional mandate
    - Established and responsive lines of communication with:
    - Early adopters (initial customers / beta sites)
    - Product developers (internal stakeholders)
    - Domain Experts (applications)
-Outputs
-*******
+####Outputs
+
    - Minimal software that allows for hardware development (nearly) independent of software resources
    - Identification of platform(s) best suited to use to run software
    - All documentation and materials (SDK, DLL, etc.) necessary for production the software development process
@@ -31,10 +31,11 @@ Outputs
    - The R&D prototype phase will not be considered complete until all the items are completed
 
 
-R&D GUI Development
-+++++++++++++++++++
+###R&D GUI Development
 
-.. image:: ./images/process_cycle.png
+
+![Image of Software Process Cycle](./images/process_cycle.png)
+
 
 
 Alpha Release
