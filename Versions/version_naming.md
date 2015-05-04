@@ -1,4 +1,4 @@
-Version Naming Standards
+SofieBio Version Naming Standards
 ========================
 
 Purpose
