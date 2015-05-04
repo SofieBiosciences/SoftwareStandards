@@ -17,8 +17,8 @@ R&D Prototype Software
 
    - Product requirements / functional mandate
    - Established and responsive lines of communication with:
-   - Early adopters (initial customers / beta sites)
-   - Product developers (internal stakeholders)
+      * Early adopters (initial customers / beta sites)
+      * Product developers (internal stakeholders)
    - Domain Experts (applications)
 ####Outputs
 
