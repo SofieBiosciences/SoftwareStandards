@@ -4,5 +4,5 @@
 [Development Process](./Process/software_dev_process.md)
 
 ##Intro to Software Version Naming
-[Version Naming](./Version/version_naming.md)
+[Version Naming](./Versions/version_naming.md)
 
