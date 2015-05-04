@@ -1,4 +1,4 @@
-#Sofie Biosciences Software Standards
+#Sofie Bio Software Standards
 
 ##Intro to Software Development Process
 [Development Process](./Process/software_dev_process.md)
