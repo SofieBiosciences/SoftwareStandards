@@ -95,6 +95,24 @@ Assuming you are on a Windows OS
 11. Once completed, restart the control box
 12. Validate the new version of Elixys is running
 
+To make a version available for download on SPN
+1. git checkout branch_to_deploy
+2. git pull
+3. git checkout master
+5. git merge branch_to_deploy
+6. re-run all tests
+7. ./osx_installer.sh [run from the target controlbox]
+8. Draft a new release https://github.com/SofieBiosciences/Elixys/releases/new
+    1. Tag Version: vx.y.z @ target: master
+    2. Release Version: pyelixys_vx.y.z
+    3. Copy src/pyelixys_config.txt Change_Logs section into this section
+    4. Drag & Drop this zip file created from ./osx_installer.sh into the binary section [Should look like linux_pyelixys_vx.y.z.zip]
+    5. Publish Release
+    6. Validate https://www.sofienetwork.com/github/releases/ displays the option for your new version.  Validate selecting that version prompts a selection of LINUX
+
+
+
+
 ### Categorizing Issues & Ticket Types
 
 #### Python
