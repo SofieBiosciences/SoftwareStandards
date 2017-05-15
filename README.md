@@ -44,6 +44,11 @@ Task and provide the necessary details/images to explain the issue.
     3. The Owner should create a SFDC Case # for this task.
 4. The Owner should move the Task (issue) into the appropriate Task List.
 
+#### Creating Github Ticket
+Once it has been determined that this change requires a code change; a Github ticket shall be created
+1. Visit the Issue tab of the Project
+2. Assign ticket to 
+
 #### Working on Completing the task
 1.  Create a branch from master on github.  Mention the git ticket name in the bug fix
 ```
@@ -71,6 +76,16 @@ git commit -m"Merging #xyz into the next release"
 git push
 ```
 
+#### Deploying the next version
+Deploying changes to production will depend on the project.  This document outlines the deployment process for Elixys, as it is our main product.  For SPN deployment procedures, follow Heroku Deployments section in the [SPN README](https://github.com/SofieBiosciences/SPN/blob/master/README.md)
+
+SPN will host all downloadable versions of Elixys.  To view the version list go to https://www.sofienetwork.com/github/releases/.  You must have a username and password to SPN in order to access this portion of site.  Without SPN credentials, you may still download the installer and get the latest version of Elixys.
+
+Assuming you are on a Windows OS
+1. http://staging-spn.herokuapp.com/github/latests_installer_exe?os=windows
+2. Once downloaded, open the exe.
+
+
 
 ### Ticket Types
 
@@ -81,6 +96,8 @@ git push
 #### Javascript
 
 #### CSS/SCSS HTML
+
+#### Salesforce
 
 
 
