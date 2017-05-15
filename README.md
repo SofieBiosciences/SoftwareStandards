@@ -31,7 +31,19 @@ Task and provide the necessary details/images to explain the issue.
       1. Select a priority level based on the severity of the bug/issue.
    5. Followers
       1. Select your name if you wish to follow the progress on this issue.
-
+      
+#### Reviewing and working on a Task
+1. The Owner of the Task should receive an email alert when a bug/issue task is created.
+2. The Owner should review all the pertinent information input into the Task.
+    1. Review the Description and any attached Files.
+    2. Review the Priority level.
+    3. Communicate with the team to make sure all information is complete and the Priority level is appropriate.
+3. Update the Priority level and define a Due Date and create a Case #.
+    1. Based on an assessment of the issue, the Owner should edit the Task and assign the appropriate Priority level.
+    2. The Owner should enter a Start date and target Due Date for the task.
+    3. The Owner should create a Case # for this task. This can match a Github case # if that is helpful.
+4. The Owner should move the Task (issue) into the appropriate Task List.
+5. When an issue is resolved, the Owner should mark the Task complete.
 
 ### New Features
 
