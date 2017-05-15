@@ -101,14 +101,16 @@ Assuming you are on a Windows OS
 ### Ticket Types
 
 #### Python
+Python is the center-point of Elixys.  It controls how each sequence operation functions [timing, turning on/off valves, record creation],and it is the layer that does all communication between the User Interface and the Firmware.  If a code-change is around a business rule; think this is the layer that will need to change. 
 
 #### C++
+C++ contains all the low-level controls for the hardware.
 
 #### Javascript
+Javascript contains the workflow of the User Interface.  This contains rules such as, what the user will be able to control and where will the user go next.
 
 #### CSS/SCSS HTML
-
-#### Salesforce
+CSS/SCSS and HTML is used to visually display the data to the user.
 
 
 
