@@ -95,10 +95,7 @@ Assuming you are on a Windows OS
 11. Once completed, restart the control box
 12. Validate the new version of Elixys is running
 
-
-
-
-### Ticket Types
+### Categorizing Issues & Ticket Types
 
 #### Python
 Python is the center-point of Elixys.  It controls how each sequence operation functions [timing, turning on/off valves, record creation],and it is the layer that does all communication between the User Interface and the Firmware.  If a code-change is around a business rule; think this is the layer that will need to change. 
@@ -111,6 +108,10 @@ Javascript contains the workflow of the User Interface.  This contains rules suc
 
 #### CSS/SCSS HTML
 CSS/SCSS and HTML is used to visually display the data to the user.
+
+
+### Tracking Deployed Software Revision Changes/History
+
 
 
 
