@@ -101,13 +101,13 @@ Assuming you are on a Windows OS
 Python is the center-point of Elixys.  It controls how each sequence operation functions [timing, turning on/off valves, record creation],and it is the layer that does all communication between the User Interface and the Firmware.  If a code-change is around a business rule; think this is the layer that will need to change. 
 
 #### C++
-C++ contains all the low-level controls for the hardware.
+C++ contains all the low-level controls for the hardware.  This layer should very seldomly be changed once hardware revisions has been finalized.
 
 #### Javascript
-Javascript contains the workflow of the User Interface.  This contains rules such as, what the user will be able to control and where will the user go next.
+Javascript contains the workflow of the User Interface.  This contains rules such as, what the user will be able to control and what will be displayed next to the user.
 
 #### CSS/SCSS HTML
-CSS/SCSS and HTML is used to visually display the data to the user.
+CSS/SCSS and HTML is used to visually display the controls and data to the user.
 
 
 ### Tracking Deployed Software Revision Changes/History
