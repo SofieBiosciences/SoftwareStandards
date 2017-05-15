@@ -93,7 +93,7 @@ Assuming you are on a Windows OS
 9. Select elixys.zip
 10. Confirm upload version
 11. Once completed, restart the control box
-12. Validate your version is running
+12. Validate the new version of Elixys is running
 
 
 
