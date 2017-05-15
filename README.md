@@ -42,6 +42,7 @@ Task and provide the necessary details/images to explain the issue.
     1. Based on an assessment of the issue, the Owner should edit the Task and assign the appropriate Priority level.
     2. The Owner should enter a Start date and target Due Date for the task.
     3. The Owner should create a SFDC Case # for this task.
+4. The Owner should move the Task (issue) into the appropriate Task List.
 
 #### Working on Completing the task
 1.  Create a branch from master on github.  Mention the git ticket name in the bug fix
@@ -53,19 +54,35 @@ git push --set-upstream origin ticket_name
 git commit -m"Working on ticket #xyz"
 git push
 ```
-2. Follow procedure for the type of ticket (python, javascript, css/scss)
+2. Follow procedure for the type of ticket (C++, python, javascript, css/scss)
 3. Once the change has been made, close the github ticket
 ```
 git add all_files_changed
 git commit -m"Fixes #xyz"
 git push
 ```
-1. The Owner should move the Task (issue) into the appropriate Task List.
-2. When an issue is resolved, the Owner should mark the Task complete.
+4. Validate change has satisfied the creator of the ticket.
+5. Once validated and all tests pass, merge change back to the next release branch
+```
+git checkout next_release
+git pull
+git merge ticket_name
+git commit -m"Merging #xyz into the next release"
+git push
+```
 
-### New Features
 
-### Bug Fix/Change Implementation
+### Ticket Types
+
+#### Python
+
+#### C++
+
+#### Javascript
+
+#### CSS/SCSS HTML
+
+
 
 
 [Development Process](./Process/software_dev_process.md)
