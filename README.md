@@ -84,6 +84,17 @@ SPN will host all downloadable versions of Elixys.  To view the version list go 
 Assuming you are on a Windows OS
 1. http://staging-spn.herokuapp.com/github/latests_installer_exe?os=windows
 2. Once downloaded, open the exe.
+3. From the toolbar select Elixys->Get Latest
+4. Close the installer
+5. Connect to the Elixys WIFI
+6. Re-Open the installer
+7. Wait for Installer to connect to your Elixys.  See the Tower PC Icon
+8. Once connected, select Upload
+9. Select elixys.zip
+10. Confirm upload version
+11. Once completed, restart the control box
+12. Validate your version is running
+
 
 
 
