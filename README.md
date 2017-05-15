@@ -82,7 +82,7 @@ Deploying changes to production will depend on the project.  This document outli
 SPN will host all downloadable versions of Elixys.  To view the version list go to https://www.sofienetwork.com/github/releases/.  You must have a username and password to SPN in order to access this portion of site.  Without SPN credentials, you may still download the installer and get the latest version of Elixys.
 
 Assuming you are on a Windows OS
-1. http://staging-spn.herokuapp.com/github/latests_installer_exe?os=windows
+1. http://sofienetwork.com/github/latests_installer_exe?os=windows
 2. Once downloaded, open the exe.
 3. From the toolbar select Elixys->Get Latest
 4. Close the installer
