@@ -106,6 +106,8 @@ Assuming you are on a Windows OS
 11. Once completed, restart the control box
 12. Validate the new version of Elixys is running
 
+
+#### Deployment SOP
 To make a version available for download on SPN
 1. git checkout branch_to_deploy
 2. git pull
