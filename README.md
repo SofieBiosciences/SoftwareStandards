@@ -145,10 +145,8 @@ Javascript contains the workflow of the User Interface.  This contains rules suc
 CSS/SCSS and HTML is used to visually display the controls and data to the user.
 
 
-### Tracking Deployed Software Revision Changes/History
+### Retrieving Deployed Software Revision Changes/History
 
 
-## Intro to Software Version Naming Standards
-[Version Naming](./Versions/version_naming.md)
 
 
