@@ -118,7 +118,7 @@ To make a version available for download on SPN
 8. Draft a new release https://github.com/SofieBiosciences/Elixys/releases/new
     1. Tag Version: vx.y.z @ target: master
     2. Release Version: pyelixys_vx.y.z
-    3. Copy src/pyelixys_config.txt Change_Logs section into this section
+    3. Copy src/pyelixys_config.txt Change_Logs section into the release notes section
     4. Drag & Drop this zip file created from ./osx_installer.sh into the binary section [Should look like linux_pyelixys_vx.y.z.zip]
     5. Publish Release
     6. Validate https://www.sofienetwork.com/github/releases/ displays the option for your new version.  Validate selecting that version prompts a selection of LINUX
@@ -147,6 +147,7 @@ CSS/SCSS and HTML is used to visually display the controls and data to the user.
 
 ### Retrieving Deployed Software Revision Changes/History
 
-
+**To Be Developed**
+Users shall be able to select on the downloadable options and see the release notes after selecting a specified version of Elixys.
 
 
