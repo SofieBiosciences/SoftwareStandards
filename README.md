@@ -55,6 +55,7 @@ Once it has been determined that this change requires a code change; a Github ti
     3. Fill in an appropriate title [Reference the teamwork task id found in the URL https://sofiebiosciences.teamwork.com/#tasks/**4753296**]
     4. Copy the comment from the teamwork task. Reference the teamwork URL in comment
     5. Submit new Issue
+    6. Once submitted, the developer shall note all sections that will be affected due to the request change.  It shall be noted in the comment section of github and brought up during Field Service meetings.
 
 #### Working on Completing the task
 1.  Create a branch from master on github.  Mention the git ticket name in the bug fix
