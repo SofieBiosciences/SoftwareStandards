@@ -122,6 +122,26 @@ To make a version available for download on SPN
     4. Drag & Drop this zip file created from ./osx_installer.sh into the binary section [Should look like linux_pyelixys_vx.y.z.zip]
     5. Publish Release
     6. Validate https://www.sofienetwork.com/github/releases/ displays the option for your new version.  Validate selecting that version prompts a selection of LINUX
+    
+Once completed, execute the following script to automatically email all users
+```
+# To be dev'd
+```
+**To Be Developed**
+It shall contain
+1. the version number recently released
+2. The release notes
+3. Blurb stating only the latests version is supported; so we suggest keeping the version up-to-date
+4. Instructions on how to get the latest version
+
+    
+### Releasing new software versions to all users
+1. How should users be notified of a SW release?
+    1. All SPN users shall be notified after a release.  Please see the Deployment SOP
+2. All software releases should include a short description of the issue fixes and changes.
+    1. Please see the Deployment SOP for release notes
+3. Will users have access to previous versions of the software?
+    1. Yes, via SPN. Please see the Deployment SOP for more information
 
 ### Categorizing Issues & Ticket Types
 
