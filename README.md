@@ -135,6 +135,9 @@ This means, prior to source code being developed; a test must be written to vali
 #### C++
 C++ contains all the low-level controls for the hardware.  This layer should very seldomly be changed once hardware revisions has been finalized.
 
+
+The firmware will be validated by executing all of the commands in benchmark directory of Elixys
+
 #### Javascript
 Javascript contains the workflow of the User Interface.  This contains rules such as, what the user will be able to control and what will be displayed next to the user.
 
