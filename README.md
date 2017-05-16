@@ -90,7 +90,7 @@ git push
 #### Deploying the next version
 Deploying changes to production will depend on the project.  This document outlines the deployment process for Elixys, as it is our main product.  For SPN deployment procedures, follow Heroku Deployments section in the [SPN README](https://github.com/SofieBiosciences/SPN/blob/master/README.md)
 
-SPN will host all downloadable versions of Elixys.  To view the version list go to https://www.sofienetwork.com/github/releases/.  You must have a username and password to SPN in order to access this portion of site.  Without SPN credentials, you may still download the installer and get the latest version of Elixys.
+SPN will host **all** downloadable versions of Elixys.  To view the version list go to https://www.sofienetwork.com/github/releases/.  You must have a username and password to SPN in order to access this portion of site.  Without SPN credentials, you may still download the installer and get the latest version of Elixys.
 
 Assuming you are on a Windows OS
 1. http://sofienetwork.com/github/latests_installer_exe?os=windows
