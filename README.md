@@ -47,7 +47,14 @@ Task and provide the necessary details/images to explain the issue.
 #### Creating Github Ticket
 Once it has been determined that this change requires a code change; a Github ticket shall be created
 1. Visit the Issue tab of the Project
-2. Assign ticket to 
+2. Select [New Issue](https://github.com/SofieBiosciences/Elixys/issues/new)
+    1. Select Assignees
+    2. Select Project/Milestone
+        1.  If this change will be part of our quarterly schedule select from our Quarterly Milestone
+        2.  If this change is immediately required [bug fix]; create a project naming the Third number (revisions) as in vx.y.z.  Still assign the quarterly milestone as this change will be part of that release.
+    3. Fill in an appropriate title [Reference the teamwork task id found in the URL https://sofiebiosciences.teamwork.com/#tasks/**4753296**]
+    4. Copy the comment from the teamwork task. Reference the teamwork URL in comment
+    5. Submit new Issue
 
 #### Working on Completing the task
 1.  Create a branch from master on github.  Mention the git ticket name in the bug fix
@@ -59,15 +66,18 @@ git push --set-upstream origin ticket_name
 git commit -m"Working on ticket #xyz"
 git push
 ```
-2. Follow procedure for the type of ticket (C++, python, javascript, css/scss)
+2. Follow procedure for the type of ticket (C++, python, javascript, css/scss) [See Categorizing Issues & Ticket Types]
 3. Once the change has been made, close the github ticket
 ```
 git add all_files_changed
-git commit -m"Fixes #xyz"
+git commit -m"This closes #34, closes #23"
 git push
 ```
 4. Validate change has satisfied the creator of the ticket.
-5. Once validated and all tests pass, merge change back to the next release branch
+    1. Visit the teamwork task id https://sofiebiosciences.teamwork.com/#tasks/**4753296**
+    2. Comment to the task creator the fix is ready.  Have the creator validate it fixes their issue.
+5. After validating the fix; update src/pyelixys_config.txt
+6. Once validated and all tests pass, merge change back to the next release branch
 ```
 git checkout next_release
 git pull
@@ -110,13 +120,14 @@ To make a version available for download on SPN
     5. Publish Release
     6. Validate https://www.sofienetwork.com/github/releases/ displays the option for your new version.  Validate selecting that version prompts a selection of LINUX
 
-
-
-
 ### Categorizing Issues & Ticket Types
 
 #### Python
-Python is the center-point of Elixys.  It controls how each sequence operation functions [timing, turning on/off valves, record creation],and it is the layer that does all communication between the User Interface and the Firmware.  If a code-change is around a business rule; think this is the layer that will need to change. 
+Python is the center-point of Elixys.  It controls how each sequence operation functions [timing, turning on/off valves, record creation],and it is the layer that does all communication between the User Interface and the Firmware.  If a code-change is around a business rule; think this is the layer that will need to change.
+
+Pyelixs changes will be written in a TDD format [Test Driven Development].
+This means, prior to source code being developed; a test must be written to validate it is working against the simulator.  This means, immediatly after writing the test, we would expect failure.  Develop the source code afterwards to make a passing test.  For more details on developing Pyelixys tests visit the [README](https://github.com/SofieBiosciences/Elixys/blob/master/src/test/README.md)
+
 
 #### C++
 C++ contains all the low-level controls for the hardware.  This layer should very seldomly be changed once hardware revisions has been finalized.
@@ -130,11 +141,6 @@ CSS/SCSS and HTML is used to visually display the controls and data to the user.
 
 ### Tracking Deployed Software Revision Changes/History
 
-
-
-
-
-[Development Process](./Process/software_dev_process.md)
 
 ## Intro to Software Version Naming Standards
 [Version Naming](./Versions/version_naming.md)
