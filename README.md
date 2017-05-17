@@ -64,6 +64,8 @@ Immediatly; branch from master.  This shall indicate the 'next_release' that is 
 git checkout master
 git pull
 git checkout -b pyelixys_vx.y.z
+# Edit src/pyelixys_config.txt, src/pyelixys/hal/templates/hwconf_simulator.ini, src/pyelixys/hal/templates/hwconf_hardware.ini
+# Increment the order, and Version in the files
 git push --set-upstream origin ticket_name
 git commit -m"Creating branch for the next version of Elixys"
 git push
@@ -144,9 +146,10 @@ To make a version available for download on SPN
     1. Tag Version: vx.y.z @ target: master
     2. Release Version: pyelixys_vx.y.z
     3. Copy src/pyelixys_config.txt Change_Logs section into the release notes section
-    4. Drag & Drop this zip file created from ./osx_installer.sh into the binary section [Should look like linux_pyelixys_vx.y.z.zip]
-    5. Publish Release
-    6. Validate https://www.sofienetwork.com/github/releases/ displays the option for your new version.  Validate selecting that version prompts a selection of LINUX
+    4. Validate src/pyelixys_config.txt, src/pyelixys/hal/templates/hwconf_simulator.ini, src/pyelixys/hal/templates/hwconf_hardware.ini.  All have the appropriate version number tied to the milestone being deployed!
+    5. Drag & Drop this zip file created from ./osx_installer.sh into the binary section [Should look like linux_pyelixys_vx.y.z.zip]
+    6. Publish Release
+    7. Validate https://www.sofienetwork.com/github/releases/ displays the option for your new version.  Validate selecting that version prompts a selection of LINUX
     
 Once completed, execute the following script to automatically email all users
 ```
