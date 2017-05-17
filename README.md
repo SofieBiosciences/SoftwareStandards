@@ -49,10 +49,10 @@ Once it has been determined that this change requires a code change; a Github ti
 1. Visit the Issue tab of the Project
 2. Select [New Issue](https://github.com/SofieBiosciences/Elixys/issues/new)
     1. Select Assignees
-    2. Select Project/Milestone
+    2. Select Milestone
         1.  If this change will be part of our quarterly schedule select from our Quarterly Milestone
-        2.  If this change is immediately required [bug fix]; create a project naming the Third number (revisions) as in vx.y.z.  Still assign the quarterly milestone as this change will be part of that release.
-    3. Fill in an appropriate title [Reference the teamwork task id found in the URL https://sofiebiosciences.teamwork.com/#tasks/**4753296**]
+        2.  If this change is immediately required [bug fix]; create a new milestone, naming revision as the title, as in vx.y.z.
+    3. Fill in an appropriate title [Reference the teamwork task id found in the URL https://sofiebiosciences.teamwork.com/#tasks/**4753296**] **Title Description - 4753296**
     4. Copy the comment from the teamwork task. Reference the teamwork URL in comment
     5. Submit new Issue
     6. Once submitted, the developer shall note all sections that will be affected due to the request change.  It shall be noted in the comment section of github and brought up during Field Service meetings.
