@@ -44,14 +44,39 @@ Task and provide the necessary details/images to explain the issue.
     3. The Owner should create a SFDC Case # for this task.
 4. The Owner should move the Task (issue) into the appropriate Task List.
 
+#### Github Milestone SOP
+It is expected Elixys will release new revisions of the software quarterly; however one-off bug fixes may also be made.  Titles shall be named in the format of 'pyelixys_vx.y.z'.  The title will need to match the release title [See Deployment SOP] in order to tie all changes to a specific Software Version.
+
+Over-arching Large Projects shall increment the 'x' digit from the version number.  This will indicate a very large software change.
+Quarterly Revisions shall increment the 'y' digit from the version number and '0' our the 'z' digit
+Bug Fixes shall increment the 'z' digit.
+
+To Create a Milestone
+1. Select the Issue Tab from your project
+2. Select Milestone from within the Issue Tab
+3. Select New Milestone
+    1.  Fill in the title based on the requirements stated above
+    2.  Ignore the Description field
+    3.  Select the due date
+
+Immediatly; branch from master.  This shall indicate the 'next_release' that is defined in the section 'Working on Completing the task'
+```
+git checkout master
+git pull
+git checkout -b pyelixys_vx.y.z
+git push --set-upstream origin ticket_name
+git commit -m"Creating branch for the next version of Elixys"
+git push
+```
+
 #### Creating Github Ticket
-Once it has been determined that this change requires a code change; a Github ticket shall be created
+Once it has been determined that this change requires a code change; a Github ticket shall be created.  All tickets shall be tied to a milestone.
 1. Visit the Issue tab of the Project
 2. Select [New Issue](https://github.com/SofieBiosciences/Elixys/issues/new)
     1. Select Assignees
     2. Select Milestone
         1.  If this change will be part of our quarterly schedule select from our Quarterly Milestone
-        2.  If this change is immediately required [bug fix]; create a new milestone, naming revision as the title, as in vx.y.z.
+        2.  If this change is immediately required [bug fix]; create a new milestone, follow the Github Milestone creation SOP.
     3. Fill in an appropriate title [Reference the teamwork task id found in the URL https://sofiebiosciences.teamwork.com/#tasks/**4753296**] **Title Description - 4753296**
     4. Copy the comment from the teamwork task. Reference the teamwork URL in comment
     5. Submit new Issue
