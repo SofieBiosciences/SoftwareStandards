@@ -150,6 +150,7 @@ To make a version available for download on SPN
     5. Drag & Drop this zip file created from ./osx_installer.sh into the binary section [Should look like linux_pyelixys_vx.y.z.zip]
     6. Publish Release
     7. Validate https://www.sofienetwork.com/github/releases/ displays the option for your new version.  Validate selecting that version prompts a selection of LINUX
+    8. Close the Milestone tied to this release.  If issues are still open, tied to this milestone; validate they are still open issues, and move them to the next milestone to be released
     
 Once completed, execute the following script to automatically email all users
 ```
