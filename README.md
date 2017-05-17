@@ -45,6 +45,7 @@ Task and provide the necessary details/images to explain the issue.
 4. The Owner should move the Task (issue) into the appropriate Task List.
 
 #### Github Milestone SOP
+Milestones will be directly related to Elixys releases.  Think if a milestone exists; it is either an up-comming release or a release that has been already made.
 It is expected Elixys will release new revisions of the software quarterly; however one-off bug fixes may also be made.  Titles shall be named in the format of 'pyelixys_vx.y.z'.  The title will need to match the release title [See Deployment SOP] in order to tie all changes to a specific Software Version.
 
 Over-arching Large Projects shall increment the 'x' digit from the version number.  This will indicate a very large software change.
@@ -196,7 +197,25 @@ CSS/SCSS and HTML is used to visually display the controls and data to the user.
 
 ### Retrieving Deployed Software Revision Changes/History
 
+All tickets created for Elixys are accessable via the URL
+www.sofienetwork/github/issue_history/.  This will export the a CSV containing when/if the issue was closed and what milestone/release the issue was fixed in.
+
 **To Be Developed**
 Users shall be able to select on the downloadable options and see the release notes after selecting a specified version of Elixys.
+
+A database (e.g. – spreadsheet) will be maintained which documents each issue’s history, from request to rectification.
+Case numbers should be line items in the database
+This document should track things like:
+1. Case #
+    1. Teamworks case number
+    2. Github number
+2. Date issue discovered/reported
+3. Date issue resolved
+4. Description of issue
+5. How issue was fixed
+    1. Validation method and result
+6. What revision this was fixed in
+7. Once we decide that it’s time to release a new version of the software, these issues get frozen and we generate a document showing all changes that were implemented in version X to version Y.
+
 
 
