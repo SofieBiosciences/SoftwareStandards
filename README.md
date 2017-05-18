@@ -107,6 +107,7 @@ git push
     2. Comment to the task creator the fix is ready.  Have the creator validate it fixes their issue.
 5. After validating the fix; update src/pyelixys_config.txt
 6. Once validated and all tests pass, merge change back to the next release branch
+7. Post a final comment on the issue stating how the fix was validated
 ```
 git checkout next_release
 git pull
