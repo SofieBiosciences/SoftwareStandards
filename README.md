@@ -6,6 +6,9 @@ This section outlines the life-cycle of the software development process. What i
 
 ### Change Request
 
+#### Customer Request
+TBD
+
 #### Internal Request
 Teamwork Projects will be used to create and track SW/UI issues. The following steps will allow the user to create a new
 Task and provide the necessary details/images to explain the issue.
