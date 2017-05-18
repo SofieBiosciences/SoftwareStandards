@@ -201,7 +201,6 @@ CSS/SCSS and HTML is used to visually display the controls and data to the user.
 All tickets created for Elixys are accessable via the URL
 www.sofienetwork/github/issue_history/.  This will export the a CSV containing when/if the issue was closed and what milestone/release the issue was fixed in.
 
-**To Be Developed**
 Users shall be able to select on the downloadable options and see the release notes after selecting a specified version of Elixys.
 
 A database (e.g. – spreadsheet) will be maintained which documents each issue’s history, from request to rectification.
