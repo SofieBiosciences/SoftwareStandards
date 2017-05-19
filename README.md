@@ -161,21 +161,21 @@ Assuming you are on a Windows OS
 
 #### Deployment SOP
 To make a version available for download on SPN
-1. git checkout next_release
+1. git checkout next_release # or branch
 2. git pull
-3. git checkout master
+3. git checkout master # or next_release
 #Modify src/pyelixys_config.txt, src/pyelixys/hal/templates/hwconf_*.ini
 4. git merge branch_to_deploy
 5. git commit -m""
 6. re-run all tests
 7. ./osx_installer.sh [run from the target controlbox]
 8. Draft a new release https://github.com/SofieBiosciences/Elixys/releases/new
-    1. Tag Version: vx.y.z @ target: master
+    1. Tag Version: vx.y.z @ target: master or next_release
     2. Release Version: pyelixys_vx.y.z
     3. Copy src/pyelixys_config.txt Change_Logs section into the release notes section
     4. Validate src/pyelixys_config.txt, src/pyelixys/hal/templates/hwconf_simulator.ini, src/pyelixys/hal/templates/hwconf_hardware.ini.  All have the appropriate version number tied to the milestone being deployed!
     5. Drag & Drop this zip file created from ./osx_installer.sh into the binary section [Should look like linux_pyelixys_vx.y.z.zip]
-    6. Publish Release [If this is a pre-release, mark it so]
+    6. Publish Release [If this is a pre-release [target @ next_release], mark it so]
     7. Validate https://www.sofienetwork.com/github/releases/ displays the option for your new version.  Validate selecting that version prompts a selection of LINUX
     8. Close the Milestone tied to this release.  If issues are still open, tied to this milestone; validate they are still open issues, and move them to the next milestone to be released
     
