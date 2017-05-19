@@ -136,11 +136,13 @@ git merge ticket_name
 git commit -m"Merging #xyz into the next release"
 git push
 ```
+8.  Follow the deployment SOP, note this is a pre-release.
 
 #### Deploying the next version
 Deploying changes to production will depend on the project.  This document outlines the deployment process for Elixys, as it is our main product.  For SPN deployment procedures, follow Heroku Deployments section in the [SPN README](https://github.com/SofieBiosciences/SPN/blob/master/README.md)
 
-SPN will host **all** downloadable versions of Elixys.  To view the version list go to https://www.sofienetwork.com/github/releases/.  You must have a username and password to SPN in order to access this portion of site.  Without SPN credentials, you may still download the installer and get the latest version of Elixys.
+SPN will host the most stable version of Elixys.  To view the version list go to https://www.sofienetwork.com/github/releases/.  Internal users may use: https://www.staging-spn.com/github/releases/ to look at all the pre-releases.
+You must have a username and password to SPN in order to access this portion of site.  Without SPN credentials, you may still download the installer and get the latest version of Elixys.
 
 Assuming you are on a Windows OS
 1. http://sofienetwork.com/github/latests_installer_exe?os=windows
@@ -159,10 +161,12 @@ Assuming you are on a Windows OS
 
 #### Deployment SOP
 To make a version available for download on SPN
-1. git checkout branch_to_deploy
+1. git checkout next_release
 2. git pull
 3. git checkout master
-5. git merge branch_to_deploy
+#Modify src/pyelixys_config.txt, src/pyelixys/hal/templates/hwconf_*.ini
+4. git merge branch_to_deploy
+5. git commit -m""
 6. re-run all tests
 7. ./osx_installer.sh [run from the target controlbox]
 8. Draft a new release https://github.com/SofieBiosciences/Elixys/releases/new
@@ -171,7 +175,7 @@ To make a version available for download on SPN
     3. Copy src/pyelixys_config.txt Change_Logs section into the release notes section
     4. Validate src/pyelixys_config.txt, src/pyelixys/hal/templates/hwconf_simulator.ini, src/pyelixys/hal/templates/hwconf_hardware.ini.  All have the appropriate version number tied to the milestone being deployed!
     5. Drag & Drop this zip file created from ./osx_installer.sh into the binary section [Should look like linux_pyelixys_vx.y.z.zip]
-    6. Publish Release
+    6. Publish Release [If this is a pre-release, mark it so]
     7. Validate https://www.sofienetwork.com/github/releases/ displays the option for your new version.  Validate selecting that version prompts a selection of LINUX
     8. Close the Milestone tied to this release.  If issues are still open, tied to this milestone; validate they are still open issues, and move them to the next milestone to be released
     
