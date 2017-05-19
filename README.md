@@ -54,15 +54,15 @@ What's the process to assess a request?
 Weekly stand-up will decide
 
 During weekly stand-ups each new Feature/Bug shall answer the following questions:
-    1. Without the code change, does the system still run as designed?
-        1. Is there a way to remedy the situation without any changes?
-    2. Why are we doing this?  Does the change make sense vs the risk/cost of development?
-    3. What else will be effected by making this change? [Does UI change, are there multiple places where change will be necessary?]
-    4. Will other customers agree the change is necessary and desired?
-        1. How can we please all of our customer base?  Perhaps this is a configuration to turn on/off?  Some choice via the UI?
-    5. Will older sequences still work and run the same? 
-    6. How complex is the change? [Low, Medium, High]
-    7. What is the criteria to pass?
+ 1. Without the code change, does the system still run as designed?
+     1. Is there a way to remedy the situation without any changes?
+ 2. Why are we doing this?  Does the change make sense vs the risk/cost of development?
+ 3. What else will be effected by making this change? [Does UI change, are there multiple places where change will be necessary?]
+ 4. Will other customers agree the change is necessary and desired?
+     1. How can we please all of our customer base?  Perhaps this is a configuration to turn on/off?  Some choice via the UI?
+ 5. Will older sequences still work and run the same? 
+ 6. How complex is the change? [Low, Medium, High]
+ 7. What is the criteria to pass?
 
 
 #### Github Milestone SOP
