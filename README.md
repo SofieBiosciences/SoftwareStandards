@@ -16,7 +16,7 @@ Task and provide the necessary details/images to explain the issue.
 ##### Reporting In Teamwork Project
 1. Login to the SOFIE Teamwork Projects website.
 2. Go to the “SW/UI” project within the ELIXYS program.
-3. Go to the Task Lists within the “SW/UI” project.
+3. Go to the Task Lists within the "SW/UI" project.
 4. Create a Task for the bug/issue in the Task List named “SW/UI Issue Reporting”.
    1. Who and When tab
        1. What needs to be done?
@@ -46,6 +46,24 @@ Task and provide the necessary details/images to explain the issue.
     2. The Owner should enter a Start date and target Due Date for the task.
     3. The Owner should create a SFDC Case # for this task.
 4. The Owner should move the Task (issue) into the appropriate Task List.
+
+#### Bug/Feature vs Milestone
+##### It's not quite clear to me how you will take a Change Request (from Teamworks or Customer) and decide what Github Milestone it will live under
+What's the process to assess a request?
+
+Weekly stand-up will decide
+
+During weekly stand-ups each new Feature/Bug shall answer the following questions:
+    1. Without the code change, does the system still run as designed?
+        1. Is there a way to remedy the situation without any changes?
+    2. Why are we doing this?  Does the change make sense vs the risk/cost of development?
+    3. What else will be effected by making this change? [Does UI change, are there multiple places where change will be necessary?]
+    4. Will other customers agree the change is necessary and desired?
+        1. How can we please all of our customer base?  Perhaps this is a configuration to turn on/off?  Some choice via the UI?
+    5. Will older sequences still work and run the same? 
+    6. How complex is the change? [Low, Medium, High]
+    7. What is the criteria to pass?
+
 
 #### Github Milestone SOP
 Milestones will be directly related to Elixys releases.  Think if a milestone exists; it is either an up-comming release or a release that has been already made.
